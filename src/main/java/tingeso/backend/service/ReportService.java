@@ -31,17 +31,18 @@ public class ReportService {
 
     public ReportDto createReport(ReportDto reportDto){return reportMapper.mapToDto(reportDao.save(reportMapper.mapToModel(reportDto))); }
 
-    public void updateReport(ReportDto reportDto, Integer id){
+    public ReportDto updateReport(ReportDto reportDto, Integer id){
         if(reportDao.findById(id).isPresent()){
-            Report reportFound = reportDao.findReportById(id);
+            Report reportFound = reportDao.findById(id).get();
             reportFound.setNameDriver(reportDto.getNameDriver());
             reportFound.setDestiny(reportDto.getDestiny());
             reportFound.setAmount(reportDto.getAmount());
             reportFound.setReceived(reportDto.getReceived());
             reportFound.setExchange(reportDto.getExchange());
             reportFound.setDate(reportDto.getDate());
-            reportDao.save(reportFound);
+            return reportMapper.mapToDto(reportDao.save(reportFound));
         }
+        return null;
     }
 
     public void deleteReport(Integer id){
