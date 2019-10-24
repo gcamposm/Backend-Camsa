@@ -16,7 +16,7 @@ public class Report {
     private Integer id;
     private String nameDriver;
     private String destiny;
-    private Integer amount;
+    private String amount;
     private Boolean received;
     private Boolean exchange;
     private String date;
