@@ -17,8 +17,8 @@ public class MailController {
     @ResponseBody
     public ResponseEntity sendMail (@RequestParam("name") String name , @RequestParam("mail") String mail, @RequestParam("msg") String msg){
         MailValidator mailValidator = MailValidator.getInstance();
-        if(mailValidator.isValidEmailAddress("guillermo.campos@usach.cl")) {
-            Runnable emailSender = new MailSender("guillermo.campos@usach.cl", name, mail, msg);
+        if(mailValidator.isValidEmailAddress("javier@arancam.cl")) {
+            Runnable emailSender = new MailSender("contacto@arancam.cl", name, mail, msg);
             emailSender.run();
             return ResponseEntity
                     .status(HttpStatus.OK)

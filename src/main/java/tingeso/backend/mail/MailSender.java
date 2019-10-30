@@ -43,11 +43,11 @@ public class MailSender implements Runnable {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
-        props.setProperty("mail.smtp.user", "guillermo.campos19@gmail.com");
-        props.setProperty("mail.smtp.password", "Scarlett141012");
+        props.setProperty("mail.smtp.user", "javier@arancam.cl");
+        props.setProperty("mail.smtp.password", "cordonroma0401");
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("guillermo.campos19@gmail.com","Scarlett141012");
+                return new PasswordAuthentication("javier@arancam.cl","cordonroma0401");
             }
         });
         Message msg = new MimeMessage(session);
