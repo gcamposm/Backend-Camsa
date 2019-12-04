@@ -139,8 +139,8 @@ public class DBSeeder implements CommandLineRunner {
         heladoSimple.setCost(null);
         heladoSimple.setWarehouseStock(null);
         heladoSimple.setEventStock(null);
-        heladoSimple.setWebDiscount(null);
-        heladoSimple.setLocalDiscount(null);
+        heladoSimple.setWebDiscount(0);
+        heladoSimple.setLocalDiscount(0);
         heladoSimple.setSubCategory(helados);
         productDao.save(heladoSimple);
         Product heladoDoble = new Product();
@@ -156,8 +156,8 @@ public class DBSeeder implements CommandLineRunner {
         heladoDoble.setCost(null);
         heladoDoble.setWarehouseStock(null);
         heladoDoble.setEventStock(null);
-        heladoDoble.setWebDiscount(null);
-        heladoDoble.setLocalDiscount(null);
+        heladoDoble.setWebDiscount(0);
+        heladoDoble.setLocalDiscount(0);
         heladoDoble.setSubCategory(helados);
         productDao.save(heladoDoble);
         Product heladotriple = new Product();
@@ -173,8 +173,8 @@ public class DBSeeder implements CommandLineRunner {
         heladotriple.setCost(null);
         heladotriple.setWarehouseStock(null);
         heladotriple.setEventStock(null);
-        heladotriple.setWebDiscount(null);
-        heladotriple.setLocalDiscount(null);
+        heladotriple.setWebDiscount(0);
+        heladotriple.setLocalDiscount(0);
         heladotriple.setSubCategory(helados);
         productDao.save(heladotriple);
         Product heladoQuadruple = new Product();
@@ -190,8 +190,8 @@ public class DBSeeder implements CommandLineRunner {
         heladoQuadruple.setCost(null);
         heladoQuadruple.setWarehouseStock(null);
         heladoQuadruple.setEventStock(null);
-        heladoQuadruple.setWebDiscount(null);
-        heladoQuadruple.setLocalDiscount(null);
+        heladoQuadruple.setWebDiscount(0);
+        heladoQuadruple.setLocalDiscount(0);
         heladoQuadruple.setSubCategory(helados);
         productDao.save(heladoQuadruple);
         Product moteMediano = new Product();
@@ -207,8 +207,8 @@ public class DBSeeder implements CommandLineRunner {
         moteMediano.setCost(null);
         moteMediano.setWarehouseStock(null);
         moteMediano.setEventStock(null);
-        moteMediano.setWebDiscount(null);
-        moteMediano.setLocalDiscount(null);
+        moteMediano.setWebDiscount(0);
+        moteMediano.setLocalDiscount(0);
         moteMediano.setSubCategory(motes);
         productDao.save(moteMediano);
         Product moteGrande = new Product();
@@ -224,8 +224,8 @@ public class DBSeeder implements CommandLineRunner {
         moteGrande.setCost(null);
         moteGrande.setWarehouseStock(null);
         moteGrande.setEventStock(null);
-        moteGrande.setWebDiscount(null);
-        moteGrande.setLocalDiscount(null);
+        moteGrande.setWebDiscount(0);
+        moteGrande.setLocalDiscount(0);
         moteGrande.setSubCategory(motes);
         productDao.save(moteGrande);
         Product moteGigante = new Product();
@@ -241,8 +241,8 @@ public class DBSeeder implements CommandLineRunner {
         moteGigante.setCost(null);
         moteGigante.setWarehouseStock(null);
         moteGigante.setEventStock(null);
-        moteGigante.setWebDiscount(null);
-        moteGigante.setLocalDiscount(null);
+        moteGigante.setWebDiscount(0);
+        moteGigante.setLocalDiscount(0);
         moteGigante.setSubCategory(motes);
         productDao.save(moteGigante);
     }
