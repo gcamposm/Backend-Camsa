@@ -155,7 +155,7 @@ public class DBSeeder implements CommandLineRunner {
         productDao.save(moteMediano);
         Product moteGrande = new Product();
         moteGrande.setCode("");
-        moteGrande.setPriceLocal(BigDecimal.valueOf(700));
+        moteGrande.setPriceLocal(BigDecimal.valueOf(1000));
         moteGrande.setPriceWeb(null);
         moteGrande.setSize(null);
         moteGrande.setStock(null);
@@ -172,7 +172,7 @@ public class DBSeeder implements CommandLineRunner {
         productDao.save(moteGrande);
         Product moteGigante = new Product();
         moteGigante.setCode("");
-        moteGigante.setPriceLocal(BigDecimal.valueOf(700));
+        moteGigante.setPriceLocal(BigDecimal.valueOf(2000));
         moteGigante.setPriceWeb(null);
         moteGigante.setSize(null);
         moteGigante.setStock(null);
