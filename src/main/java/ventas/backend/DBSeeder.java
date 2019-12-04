@@ -101,6 +101,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoDoble.setWebDiscount(null);
         heladoDoble.setLocalDiscount(null);
         heladoDoble.setSubCategory(helados);
+        productDao.save(heladoDoble);
         Product heladotriple = new Product();
         heladotriple.setCode("");
         heladotriple.setPriceLocal(BigDecimal.valueOf(1000));
