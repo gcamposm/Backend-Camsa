@@ -120,13 +120,13 @@ public class DBSeeder implements CommandLineRunner {
         productDao.save(heladotriple);
         Product heladoQuadruple = new Product();
         heladoQuadruple.setCode("");
-        heladoQuadruple.setPriceLocal(BigDecimal.valueOf(1300));
+        heladoQuadruple.setPriceLocal(BigDecimal.valueOf(1400));
         heladoQuadruple.setPriceWeb(null);
         heladoQuadruple.setSize(null);
         heladoQuadruple.setStock(null);
         heladoQuadruple.setDeleted(false);
         heladoQuadruple.setPublished(true);
-        heladoQuadruple.setModuleName("Helado Quadruple");
+        heladoQuadruple.setModuleName("Helado Gigante");
         heladoQuadruple.setWebName(null);
         heladoQuadruple.setCost(null);
         heladoQuadruple.setWarehouseStock(null);
