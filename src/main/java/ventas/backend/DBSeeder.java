@@ -1,8 +1,8 @@
 package ventas.backend;
 
-import tingeso.backend.SQL.dao.*;
 import ventas.backend.SQL.dao.*;
-import tingeso.backend.SQL.models.*;
+import ventas.backend.SQL.dao.*;
+import ventas.backend.SQL.models.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;

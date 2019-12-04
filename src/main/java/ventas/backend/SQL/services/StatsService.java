@@ -5,7 +5,7 @@ import ventas.backend.SQL.dao.SaleDao;
 import ventas.backend.SQL.dto.ProductSoldDto;
 import ventas.backend.SQL.dto.ProductSoldPerDayDto;
 import ventas.backend.SQL.dto.SaleDayStat;
-import tingeso.backend.SQL.models.*;
+import ventas.backend.SQL.models.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ventas.backend.SQL.models.*;

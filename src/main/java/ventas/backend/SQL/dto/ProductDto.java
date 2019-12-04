@@ -1,6 +1,6 @@
 package ventas.backend.SQL.dto;
 
-import tingeso.backend.SQL.models.*;
+import ventas.backend.SQL.models.*;
 import ventas.backend.SQL.models.Image;
 import ventas.backend.SQL.models.Provider;
 import ventas.backend.SQL.models.SubCategory;

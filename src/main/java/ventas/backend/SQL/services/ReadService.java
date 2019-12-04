@@ -1,12 +1,12 @@
 package ventas.backend.SQL.services;
 
-import tingeso.backend.SQL.dao.*;
+import ventas.backend.SQL.dao.*;
 import ventas.backend.SQL.dao.CategoryDao;
 import ventas.backend.SQL.dao.ProductDao;
 import ventas.backend.SQL.dao.ProviderDao;
 import ventas.backend.SQL.dao.SubCategoryDao;
 import ventas.backend.SQL.dto.ProductExcel;
-import tingeso.backend.SQL.models.*;
+import ventas.backend.SQL.models.*;
 import ventas.backend.SQL.models.Category;
 import ventas.backend.SQL.models.Product;
 import ventas.backend.SQL.models.Provider;

@@ -1,15 +1,15 @@
 package ventas.backend.SQL.services;
 
 
-import tingeso.backend.Exceptions.*;
-import tingeso.backend.SQL.dao.*;
+import ventas.backend.Exceptions.*;
+import ventas.backend.SQL.dao.*;
 import ventas.backend.Exceptions.*;
 import ventas.backend.SQL.dao.*;
 import ventas.backend.SQL.dto.ProductQuantity;
 import ventas.backend.SQL.dto.ReducedSaleDetailDto;
 import ventas.backend.SQL.dto.SaleInformationDto;
 import ventas.backend.SQL.mappers.SaleDetailMapper;
-import tingeso.backend.SQL.models.*;
+import ventas.backend.SQL.models.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ventas.backend.SQL.models.*;

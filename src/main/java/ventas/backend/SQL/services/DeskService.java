@@ -5,7 +5,7 @@ import ventas.backend.SQL.dao.PhysicalDeskDao;
 import ventas.backend.SQL.dao.UserDao;
 import ventas.backend.SQL.dto.DeskDto;
 import ventas.backend.SQL.mappers.DeskMapper;
-import tingeso.backend.SQL.models.*;
+import ventas.backend.SQL.models.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ventas.backend.SQL.models.*;
