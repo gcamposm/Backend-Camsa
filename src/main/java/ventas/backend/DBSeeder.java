@@ -12,6 +12,8 @@ import ventas.backend.SQL.models.Product;
 import ventas.backend.SQL.models.SubCategory;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 @Order(2)
@@ -34,6 +36,62 @@ public class DBSeeder implements CommandLineRunner {
 
     @Autowired
     private PhysicalDeskDao physicalDeskDao;
+
+    public void firstSeeder(){
+        List<PaymentMethod> paymentMethodList = paymentMethodDao.findAll();
+        List<PhysicalDesk> physicalDeskList = physicalDeskDao.findAll();
+        if(paymentMethodList.size() == 0){
+            PaymentMethod paymentMethod1 = new PaymentMethod();
+            paymentMethod1.setType("Crédito");
+            paymentMethodDao.save(paymentMethod1);
+            PaymentMethod paymentMethod2 = new PaymentMethod();
+            paymentMethod2.setType("Débito");
+            paymentMethodDao.save(paymentMethod2);
+            PaymentMethod paymentMethod3 = new PaymentMethod();
+            paymentMethod3.setType("Efectivo");
+            paymentMethodDao.save(paymentMethod3);
+            PaymentMethod paymentMethod4 = new PaymentMethod();
+            paymentMethod4.setType("Cheques");
+            paymentMethodDao.save(paymentMethod4);
+            PaymentMethod paymentMethod5 = new PaymentMethod();
+            paymentMethod5.setType("Transferencia bancaria");
+            paymentMethodDao.save(paymentMethod5);
+        }
+        if(physicalDeskList.size() == 0)
+        {
+            PhysicalDesk physicalDesk = new PhysicalDesk();
+            physicalDesk.setOffice("Tobalaba");
+            physicalDesk.setDescription("1");
+            physicalDesk.setDeskList(new ArrayList<>());
+            physicalDeskDao.save(physicalDesk);
+            PhysicalDesk physicalDesk2 = new PhysicalDesk();
+            physicalDesk2.setOffice("Local 2");
+            physicalDesk2.setDescription("2");
+            physicalDesk2.setDeskList(new ArrayList<>());
+            physicalDeskDao.save(physicalDesk2);
+        }
+        if(productDao.findProductByCode("0") == null){
+            Integer i;
+            for(i = 0; i < 10 ; i ++) {
+                Product product = new Product();
+                product.setCode(i.toString());
+                product.setPriceLocal(BigDecimal.ZERO);
+                product.setPriceWeb(BigDecimal.ZERO);
+                product.setSize("S");
+                product.setStock(1000000);
+                product.setDeleted(false);
+                product.setPublished(false);
+                product.setModuleName("comodin" +i.toString());
+                product.setWebName("");
+                product.setCost(BigDecimal.ZERO);
+                product.setWarehouseStock(1000000);
+                product.setEventStock(1000000);
+                product.setWebDiscount(0);
+                product.setLocalDiscount(0);
+                productDao.save(product);
+            }
+        }
+    }
 
     public void categorySeeder(){
         Category iceCream = new Category();
@@ -191,6 +249,7 @@ public class DBSeeder implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        firstSeeder();
         categorySeeder();
         subCategorySeeder();
         productSeeder();
