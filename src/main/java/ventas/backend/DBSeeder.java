@@ -142,6 +142,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoSimple.setWebDiscount(0);
         heladoSimple.setLocalDiscount(0);
         heladoSimple.setSubCategory(helados);
+        heladoSimple.setDescription("/img/helado1.jpg");
         productDao.save(heladoSimple);
         Product heladoDoble = new Product();
         heladoDoble.setCode("");
@@ -159,6 +160,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoDoble.setWebDiscount(0);
         heladoDoble.setLocalDiscount(0);
         heladoDoble.setSubCategory(helados);
+        heladoDoble.setDescription("/img/helado2.jpg");
         productDao.save(heladoDoble);
         Product heladotriple = new Product();
         heladotriple.setCode("");
@@ -176,6 +178,7 @@ public class DBSeeder implements CommandLineRunner {
         heladotriple.setWebDiscount(0);
         heladotriple.setLocalDiscount(0);
         heladotriple.setSubCategory(helados);
+        heladotriple.setDescription("/img/helado3.jpg");
         productDao.save(heladotriple);
         Product heladoQuadruple = new Product();
         heladoQuadruple.setCode("");
@@ -193,6 +196,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoQuadruple.setWebDiscount(0);
         heladoQuadruple.setLocalDiscount(0);
         heladoQuadruple.setSubCategory(helados);
+        heladoQuadruple.setDescription("/img/helado4.jpg");
         productDao.save(heladoQuadruple);
         Product moteMediano = new Product();
         moteMediano.setCode("");
@@ -210,6 +214,7 @@ public class DBSeeder implements CommandLineRunner {
         moteMediano.setWebDiscount(0);
         moteMediano.setLocalDiscount(0);
         moteMediano.setSubCategory(motes);
+        moteMediano.setDescription("/img/mote.png");
         productDao.save(moteMediano);
         Product moteGrande = new Product();
         moteGrande.setCode("");
@@ -227,6 +232,7 @@ public class DBSeeder implements CommandLineRunner {
         moteGrande.setWebDiscount(0);
         moteGrande.setLocalDiscount(0);
         moteGrande.setSubCategory(motes);
+        moteGrande.setDescription("/img/mote.png");
         productDao.save(moteGrande);
         Product moteGigante = new Product();
         moteGigante.setCode("");
@@ -244,6 +250,7 @@ public class DBSeeder implements CommandLineRunner {
         moteGigante.setWebDiscount(0);
         moteGigante.setLocalDiscount(0);
         moteGigante.setSubCategory(motes);
+        moteGigante.setDescription("/img/mote.png");
         productDao.save(moteGigante);
     }
 

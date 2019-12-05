@@ -58,7 +58,7 @@ public class ReducedSaleDetailService {
 
         Sale sale;
         //Create new Sale
-        if(saleId == null) {
+        if(saleDao.findSaleById(saleId) == null) {
             sale = createSale(userId, deskId, finalized, description, positiveBalance);
         }
         //Edit the sale if exist
@@ -67,7 +67,6 @@ public class ReducedSaleDetailService {
             sale.setDescription(saleInformationDto.getDescription());
             if(sale == null) throw new IdNotFoundException("Could not found the sale with id: " + saleId);
             List<SaleDetail> saleDetailList = sale.getSaleDetailList();
-
             //delete the sale details in the database
             deleteSaleDetailsBySale(sale);
             //delete the array
@@ -181,7 +180,7 @@ public class ReducedSaleDetailService {
             productDao.save(product);
             return new ProductQuantity(product, local_stock, difference, 0);
         }
-        else if(local_stock + warehouse_stock + event_stock >= quantity){
+        else{
             //EJ quantity = 24, local_stock = 5 => difference1 = 19
             int difference1 = quantity - local_stock;
             //EJ difference1 = 19, warehouse_stock = 10 => difference2 = 9
@@ -192,10 +191,6 @@ public class ReducedSaleDetailService {
             product.setEventStock(event_stock - difference2);
             productDao.save(product);
             return new ProductQuantity(product, local_stock, warehouse_stock, difference2);
-        }
-        else{
-            System.out.println("no hay stock");
-            throw new NotSufficientStockException("No hay stock suficiente para el producto con código: " + product.getCode());
         }
     }
 
