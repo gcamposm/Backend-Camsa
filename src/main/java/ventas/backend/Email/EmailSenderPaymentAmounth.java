@@ -104,11 +104,11 @@ public class EmailSenderPaymentAmounth implements Runnable {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
-        props.setProperty("mail.smtp.user", "estadisticas.ventas@gmail.com");
-        props.setProperty("mail.smtp.password", "ventas123");
+        props.setProperty("mail.smtp.user", "guillermo.campos19@gmail.com");
+        props.setProperty("mail.smtp.password", "Scarlett141012");
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("estadisticas.ventas@gmail.com","ventas123");
+                return new PasswordAuthentication("guillermo.campos19@gmail.com","Scarlett141012");
             }
         });
         Message msg = new MimeMessage(session);

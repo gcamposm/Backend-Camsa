@@ -35,14 +35,35 @@ public class DataInitializer implements CommandLineRunner {
             //users.deleteAll();
             this.users.save(User.builder()
                     .username("user")
-                    .password(this.passwordEncoder.encode("password"))
+                    .password(this.passwordEncoder.encode("userPassword"))
                     .roles(Arrays.asList("ROLE_USER"))
                     .build()
             );
 
             this.users.save(User.builder()
                     .username("admin")
+                    .password(this.passwordEncoder.encode("adminPassword"))
+                    .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
+                    .build()
+            );
+
+            this.users.save(User.builder()
+                    .username("Jessica")
                     .password(this.passwordEncoder.encode("tasmania"))
+                    .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
+                    .build()
+            );
+
+            this.users.save(User.builder()
+                    .username("Scarlett")
+                    .password(this.passwordEncoder.encode("monitolindo1410"))
+                    .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
+                    .build()
+            );
+
+            this.users.save(User.builder()
+                    .username("Guillermo")
+                    .password(this.passwordEncoder.encode("Scarlett1410"))
                     .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
                     .build()
             );
