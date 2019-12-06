@@ -135,7 +135,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoSimple.setDeleted(false);
         heladoSimple.setPublished(true);
         heladoSimple.setModuleName("Helado Simple");
-        heladoSimple.setWebName(null);
+        heladoSimple.setWebName("Helado");
         heladoSimple.setCost(null);
         heladoSimple.setWarehouseStock(null);
         heladoSimple.setEventStock(null);
@@ -153,7 +153,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoDoble.setDeleted(false);
         heladoDoble.setPublished(true);
         heladoDoble.setModuleName("Helado Doble");
-        heladoDoble.setWebName(null);
+        heladoDoble.setWebName("Helado");
         heladoDoble.setCost(null);
         heladoDoble.setWarehouseStock(null);
         heladoDoble.setEventStock(null);
@@ -171,7 +171,7 @@ public class DBSeeder implements CommandLineRunner {
         heladotriple.setDeleted(false);
         heladotriple.setPublished(true);
         heladotriple.setModuleName("Helado Triple");
-        heladotriple.setWebName(null);
+        heladotriple.setWebName("Helado");
         heladotriple.setCost(null);
         heladotriple.setWarehouseStock(null);
         heladotriple.setEventStock(null);
@@ -189,7 +189,7 @@ public class DBSeeder implements CommandLineRunner {
         heladoQuadruple.setDeleted(false);
         heladoQuadruple.setPublished(true);
         heladoQuadruple.setModuleName("Helado Gigante");
-        heladoQuadruple.setWebName(null);
+        heladoQuadruple.setWebName("Helado");
         heladoQuadruple.setCost(null);
         heladoQuadruple.setWarehouseStock(null);
         heladoQuadruple.setEventStock(null);
@@ -207,7 +207,7 @@ public class DBSeeder implements CommandLineRunner {
         moteMediano.setDeleted(false);
         moteMediano.setPublished(true);
         moteMediano.setModuleName("Mote Mediano");
-        moteMediano.setWebName(null);
+        moteMediano.setWebName("Mote");
         moteMediano.setCost(null);
         moteMediano.setWarehouseStock(null);
         moteMediano.setEventStock(null);
@@ -225,7 +225,7 @@ public class DBSeeder implements CommandLineRunner {
         moteGrande.setDeleted(false);
         moteGrande.setPublished(true);
         moteGrande.setModuleName("Mote Grande");
-        moteGrande.setWebName(null);
+        moteGrande.setWebName("Mote");
         moteGrande.setCost(null);
         moteGrande.setWarehouseStock(null);
         moteGrande.setEventStock(null);
@@ -243,7 +243,7 @@ public class DBSeeder implements CommandLineRunner {
         moteGigante.setDeleted(false);
         moteGigante.setPublished(true);
         moteGigante.setModuleName("Mote Gigante");
-        moteGigante.setWebName(null);
+        moteGigante.setWebName("Mote");
         moteGigante.setCost(null);
         moteGigante.setWarehouseStock(null);
         moteGigante.setEventStock(null);
